@@ -1,11 +1,15 @@
 <?php
-    class LeapYearGenerator
+
+class LeapYearGenerator
+{
+    function checkLeapYear($input_year)
     {
-        function checkLeapYear()
-        {
-            if (($input_year % 4) != 0) {
-                return false;
-            }
+        if (($input_year % 4) != 0) {
+            return false;
+        } else {
+            return true;
         }
     }
+}
+
 ?>
